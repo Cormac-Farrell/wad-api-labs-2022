@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
 // register
 router.post('/', asyncHandler(async (req, res) => {
     if (req.query.action === 'register') {  //if action is 'register' then save to DB
-        await User(req.body).save()
+        await User(req.body).save();
         res.status(201).json({
             code: 201,
             msg: 'Successful created new user.',
