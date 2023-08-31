@@ -8,6 +8,4 @@ router.get('/', async (req, res) => {
     res.json(genres);
 });
 
-
-
 export default router;
